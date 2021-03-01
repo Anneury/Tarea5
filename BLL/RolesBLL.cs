@@ -31,7 +31,7 @@ namespace PrimeraPruebaTarea5.BLL
             }
             return paso;
         }
-        public static bool Insertar(Roles roles)
+        private static bool Insertar(Roles roles)
         {
             Contexto contexto = new Contexto();
             bool paso = false;

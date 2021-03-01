@@ -32,7 +32,7 @@ namespace PrimeraPruebaTarea5.BLL
             return paso;
         }
 
-        public static bool Insertar(Usuarios usuario)
+        private static bool Insertar(Usuarios usuario)
         {
             Contexto contexto = new Contexto();
             bool paso = false;

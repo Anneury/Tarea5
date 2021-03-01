@@ -30,7 +30,7 @@ namespace PrimeraPruebaTarea5.BLL
             }
             return paso;
         }
-        public static bool Insertar(Permisos permisos)
+        private static bool Insertar(Permisos permisos)
         {
             Contexto contexto = new Contexto();
             bool paso = false;
