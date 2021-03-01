@@ -52,7 +52,7 @@ namespace PrimeraPruebaTarea5.BLL
             return paso;
         }
 
-        public static bool Modificar(Permisos permisos)
+        private static bool Modificar(Permisos permisos)
         {
             Contexto contexto = new Contexto();
             bool paso = false;

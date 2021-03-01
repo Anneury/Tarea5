@@ -53,7 +53,7 @@ namespace PrimeraPruebaTarea5.BLL
             return paso;
         }
 
-        public static bool Modificar(Roles roles)
+        private static bool Modificar(Roles roles)
         {
             Contexto contexto = new Contexto();
             bool paso = false;
