@@ -35,7 +35,6 @@ namespace PrimeraPruebaTarea5.UI.Registros
             this.label2 = new System.Windows.Forms.Label();
             this.NombrePermisoTextBox = new System.Windows.Forms.TextBox();
             this.NuevoButton = new System.Windows.Forms.Button();
-            this.EliminarButton = new System.Windows.Forms.Button();
             this.BuscarButton = new System.Windows.Forms.Button();
             this.PermisoIdNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
@@ -65,13 +64,13 @@ namespace PrimeraPruebaTarea5.UI.Registros
             // 
             this.NombrePermisoTextBox.Location = new System.Drawing.Point(13, 122);
             this.NombrePermisoTextBox.Name = "NombrePermisoTextBox";
-            this.NombrePermisoTextBox.Size = new System.Drawing.Size(216, 27);
+            this.NombrePermisoTextBox.Size = new System.Drawing.Size(282, 27);
             this.NombrePermisoTextBox.TabIndex = 3;
             // 
             // NuevoButton
             // 
             this.NuevoButton.Image = ((System.Drawing.Image)(resources.GetObject("NuevoButton.Image")));
-            this.NuevoButton.Location = new System.Drawing.Point(47, 192);
+            this.NuevoButton.Location = new System.Drawing.Point(95, 183);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(94, 36);
             this.NuevoButton.TabIndex = 4;
@@ -79,18 +78,6 @@ namespace PrimeraPruebaTarea5.UI.Registros
             this.NuevoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NuevoButton.UseVisualStyleBackColor = true;
             this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
-            // 
-            // EliminarButton
-            // 
-            this.EliminarButton.Image = ((System.Drawing.Image)(resources.GetObject("EliminarButton.Image")));
-            this.EliminarButton.Location = new System.Drawing.Point(165, 192);
-            this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(107, 36);
-            this.EliminarButton.TabIndex = 6;
-            this.EliminarButton.Text = "Eliminar";
-            this.EliminarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.EliminarButton.UseVisualStyleBackColor = true;
-            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // BuscarButton
             // 
@@ -122,7 +109,6 @@ namespace PrimeraPruebaTarea5.UI.Registros
             this.ClientSize = new System.Drawing.Size(307, 240);
             this.Controls.Add(this.PermisoIdNumericUpDown);
             this.Controls.Add(this.BuscarButton);
-            this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.NombrePermisoTextBox);
             this.Controls.Add(this.label2);
@@ -142,7 +128,6 @@ namespace PrimeraPruebaTarea5.UI.Registros
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox NombrePermisoTextBox;
         private System.Windows.Forms.Button NuevoButton;
-        private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.NumericUpDown PermisoIdNumericUpDown;
         private System.Windows.Forms.ErrorProvider MyErrorProvider;

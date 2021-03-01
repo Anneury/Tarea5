@@ -181,6 +181,11 @@ namespace PrimeraPruebaTarea5.UI.Registros
         {
             if (DetallesDataGridView.DataSource != null)
                 this.Detalle = (List<RolesDetalle>)DetallesDataGridView.DataSource;
+            if (PermisoIdComboBox.Text == string.Empty)
+            {
+                MessageBox.Show("Debes seleccionar un permiso antes de continuar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             this.Detalle.Add(
                 new RolesDetalle(

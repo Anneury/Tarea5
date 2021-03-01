@@ -10,7 +10,7 @@ using System.Linq.Expressions;
 
 namespace PrimeraPruebaTarea5.BLL
 {
-    class RolesBLL
+    public class RolesBLL
     {
         public static bool Existe(int id)
         {
