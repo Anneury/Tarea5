@@ -139,22 +139,14 @@ namespace PrimeraPruebaTarea5.UI.Registros
         private void GuardarButton_Click(object sender, EventArgs e)
         {
             Usuarios usuarios;
-            bool paso = false;
+            //bool paso = false;
 
             if (!Validar())
                 return;
 
             usuarios = LlenaClase();
 
-            if (!(UsuariosBLL.Existe((int)IdUsuarioNumericUpDown.Value)))
-            {
-                if (!ExisteEnLaBaseDeDatos())
-                    paso = UsuariosBLL.Guardar(usuarios);
-                else
-                {
-                    paso = UsuariosBLL.Modificar(usuarios);
-                }
-            }
+            var paso = UsuariosBLL.Guardar(usuarios);
 
             if (paso)
             {

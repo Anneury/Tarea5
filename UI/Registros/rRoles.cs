@@ -88,24 +88,13 @@ namespace PrimeraPruebaTarea5.UI.Registros
         private void GuardarButton_Click(object sender, EventArgs e)
         {
             Roles roles;
-            bool paso = false;
 
             if (!Validar())
                 return;
+
             roles = LlenaClase();
 
-            if (RolIdNumericUpDown1.Value == 0)
-                paso = RolesBLL.Guardar(roles);
-            else
-            {
-                if (!ExisteEnLaBaseDeDatos())
-                {
-                    MessageBox.Show("No es posible moficar este rol, prueba con otro.", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    Limpiar();
-                    return;
-                }
-                paso = RolesBLL.Modificar(roles);
-            }
+            var paso = RolesBLL.Guardar(roles);
 
             if (paso)
             {
